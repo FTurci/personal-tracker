@@ -6,7 +6,7 @@ from colorama import Fore as F
 
 parser=argparse.ArgumentParser(description="Trim overlapped particles, in two possible ways!",formatter_class=argparse.RawTextHelpFormatter)
 parser.add_argument("filename", type=str, help="3 columns data. Comments with '#' are permitted ")
-parser.add_argument("mode", type=int, help="Two options\n    1 : a la Colloids \n    2: filter the double overlaps first" )
+parser.add_argument("mode", type=int, help="Two options\n    1 : a la Colloids \n    2 : filter the double overlaps first" )
 parser.add_argument("rcut", type=float, help="cutoff distance")
 args=parser.parse_args()
 filename=args.filename
